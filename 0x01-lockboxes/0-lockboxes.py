@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """
-This module contains a function to solve the lockboxes algorrithm problem
+This module contains a function to solve the lockboxes algorithm problem
 """
-
 
 def canUnlockAll(boxes):
     """
@@ -14,27 +13,18 @@ def canUnlockAll(boxes):
     Return:
         (bool) True if all boxes can be opened, false otherwise
     """
-    if not boxes or len(boxes) == 1:
-        return True
+    if not boxes:
+        return False
 
-    current_box = 0
-    boxes_keys = {}
-    next_box = True
+    unlocked = set()
+    unlocked.add(0)
+    queue = [0]
 
-    while next_box:
-        boxes_keys[current_box] = True
-        for key in boxes[current_box]:
-            if key not in boxes_keys.keys():
-                boxes_keys[key] = False
+    while queue:
+        current = queue.pop(0)
+        for key in boxes[current]:
+            if key not in unlocked and key < len(boxes):
+                unlocked.add(key)
+                queue.append(key)
 
-        if len(boxes_keys) == len(boxes):
-            return True
-
-        next_box = False
-        for key, unlocked in boxes_keys.items():
-            if (not unlocked) and (key < len(boxes) and key >= 0):
-                next_box = True
-                current_box = key
-                break
-
-    return False
+    return len(unlocked) == len(boxes)
