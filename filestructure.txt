@@ -1,0 +1,39 @@
+|-- 0x00-pascal_triangle
+    |-- 0-pascal_triangle.py
+    |-- README.md
+|-- 0x01-lockboxes
+    |-- 0-lockboxes.py
+    |-- README.md
+|-- 0x02-minimum_operations
+    |-- 0-minoperations.py
+    |-- README.md
+|-- 0x03-log_parsing
+    |-- 0-stats.py
+    |-- README.md
+|-- 0x04-utf8_validation
+    |-- 0-main.py
+    |-- 0-validate_utf8.py
+    |-- README.md
+    |-- __pycache__
+        |-- 0-validate_utf8.cpython-310.pyc
+        |-- 0-validate_utf8.cpython-312.pyc
+|-- 0x05-nqueens
+    |-- 0-nqueens.py
+    |-- README.md
+|-- 0x06-starwars_api
+    |-- 0-starwars_characters.js
+    |-- README.md
+|-- 0x07-rotate_2d_matrix
+    |-- 0-rotate_2d_matrix.py
+    |-- README.md
+    |-- main_0.py
+|-- 0x08-making_change
+    |-- 0-making_change.py
+    |-- README.md
+|-- 0x09-island_perimeter
+    |-- 0-island_perimeter.py
+    |-- 0-main.py
+    |-- README.md
+    |-- __pycache__
+        |-- 0-island_perimeter.cpython-311.pyc
+|-- README.md
