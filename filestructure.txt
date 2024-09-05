@@ -36,4 +36,7 @@
     |-- README.md
     |-- __pycache__
         |-- 0-island_perimeter.cpython-311.pyc
+|-- 0x0A-primegame
+    |-- 0-prime_game.py
+    |-- README.md
 |-- README.md
