@@ -39,4 +39,6 @@
 |-- 0x0A-primegame
     |-- 0-prime_game.py
     |-- README.md
+    |-- __pycache__
+        |-- 0-prime_game.cpython-311.pyc
 |-- README.md
